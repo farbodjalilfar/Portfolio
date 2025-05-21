@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, experience, and projects as a Computer Science student at Toronto Metropolitan University.
 
+**🌐 [View the Website](https://farbodjalilfar.github.io/Portfolio/)**
+
 ## Table of Contents
 
 - [Overview](#overview)
