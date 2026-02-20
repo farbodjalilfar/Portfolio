@@ -121,8 +121,10 @@
   }
   .hero-img img {
     width: 250px;
-    border-radius: 16px;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(132, 210, 255, 0.3);
   }
   
   /* Sections */
