@@ -11,6 +11,9 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   #bg-video {
     position: fixed;
     right: 0;
@@ -53,6 +56,7 @@
   }
 
   .site-title {
+    display: inline-block;
     font-size: 1.6rem;
     font-weight: 800;
     background: linear-gradient(120deg, #84d2ff, #f4d03f);
@@ -61,6 +65,7 @@
     background-clip: text;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    color: transparent;
   }
 
   .site-title:hover {
@@ -110,6 +115,15 @@
   nav a:hover::before {
     width: 100%;
   }
+
+  nav a.active {
+    color: #84d2ff;
+    text-shadow: 0 0 20px rgba(132, 210, 255, 0.4);
+  }
+
+  nav a.active::before {
+    width: 100%;
+  }
   
   /* Hero */
   .hero {
@@ -141,6 +155,17 @@
     color: #b0b8c1;
     font-size: 1rem;
     line-height: 1.6;
+  }
+  .availability-badge {
+    display: inline-block;
+    margin: 4px 0 14px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #f4d03f;
+    background: rgba(244, 208, 63, 0.1);
+    border: 1px solid rgba(244, 208, 63, 0.35);
   }
   .hero-buttons .btn {
     display: inline-flex;
@@ -843,16 +868,50 @@
     margin-bottom: 12px;
   }
 
-  .contact-links a {
+  .email-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .email-row a {
     font-size: 0.9rem;
     color: #84d2ff;
     word-break: break-all;
     transition: all 0.3s ease;
   }
 
-  .contact-links a:hover {
+  .email-row a:hover {
     color: #f4d03f;
     text-decoration: underline;
+  }
+
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(132, 210, 255, 0.35);
+    background: rgba(132, 210, 255, 0.08);
+    color: #84d2ff;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+
+  .copy-btn:hover {
+    border-color: #84d2ff;
+    background: rgba(132, 210, 255, 0.15);
+    transform: translateY(-1px);
+  }
+
+  .copy-btn.copied {
+    border-color: #f4d03f;
+    color: #f4d03f;
+    background: rgba(244, 208, 63, 0.12);
   }
 
   .contact-link-btn {
