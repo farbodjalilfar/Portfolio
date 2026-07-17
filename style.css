@@ -471,6 +471,43 @@
     background: rgba(132, 210, 255, 0.1);
     border: 1px solid rgba(132, 210, 255, 0.25);
   }
+  .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #0b0f14;
+    background: linear-gradient(120deg, #84d2ff, #f4d03f);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(132, 210, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    white-space: nowrap;
+  }
+  .project-btn.secondary {
+    color: #84d2ff;
+    background: rgba(132, 210, 255, 0.08);
+    border: 1px solid rgba(132, 210, 255, 0.35);
+    box-shadow: none;
+  }
+  .project-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(244, 208, 63, 0.35);
+    filter: brightness(1.05);
+  }
+  .project-btn.secondary:hover {
+    background: rgba(132, 210, 255, 0.15);
+    box-shadow: 0 8px 20px rgba(132, 210, 255, 0.15);
+    filter: none;
+  }
   .project-body {
     margin-top: 16px;
     display: flex;
